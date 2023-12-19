@@ -1,0 +1,30 @@
+{
+	"name": "SAP_ODP",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"test_subscriber": {
+				"type": "string"
+			},
+			"test_param": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SapOdp",
+		"typeProperties": {
+			"clientId": "200",
+			"language": "EN",
+			"sncMode": false,
+			"userName": "NL35167",
+			"subscriberName": "@{linkedService().test_subscriber}",
+			"server": "bfeslsd.solco.global.nttdata.com",
+			"systemNumber": "00",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJiZjY4OTg1Yy1jMTI0LTQ1MWUtYjNlOS1jNTk0YjJkYTFiMWEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "IRLocal",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

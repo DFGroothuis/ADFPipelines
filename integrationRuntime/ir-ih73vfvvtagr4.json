@@ -1,0 +1,7 @@
+{
+	"name": "ir-ih73vfvvtagr4",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Self-hosted Integration runtime created using ARM template"
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "GxpDF-ADF",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1576a3fd-295b-4ce4-9513-8f5dc871766f",
+		"tenantId": "46c4de19-0ffc-4c54-aa86-ee7274afa9d7"
+	}
+}

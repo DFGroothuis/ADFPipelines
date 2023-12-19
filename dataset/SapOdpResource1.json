@@ -1,0 +1,21 @@
+{
+	"name": "SapOdpResource1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SAP_ODP",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"test_subscriber": "IPRODUCT",
+				"test_param": "0"
+			}
+		},
+		"annotations": [],
+		"type": "SapOdpResource",
+		"schema": [],
+		"typeProperties": {
+			"context": "ABAP_CDS",
+			"objectName": "IPRODUCT$P"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

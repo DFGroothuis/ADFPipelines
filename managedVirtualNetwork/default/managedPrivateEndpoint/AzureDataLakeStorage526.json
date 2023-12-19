@@ -1,0 +1,10 @@
+{
+	"name": "AzureDataLakeStorage526",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/b4e51074-d735-40c8-ae01-f374217d2c40/resourceGroups/Storage-rg/providers/Microsoft.Storage/storageAccounts/gxpdfdatalake",
+		"groupId": "dfs",
+		"fqdns": [
+			"gxpdfdatalake.dfs.core.windows.net"
+		]
+	}
+}

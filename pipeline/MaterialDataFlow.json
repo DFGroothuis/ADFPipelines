@@ -1,0 +1,52 @@
+{
+	"name": "MaterialDataFlow",
+	"properties": {
+		"activities": [
+			{
+				"name": "DF_Iproduct",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "MaterialCDS",
+						"type": "DataFlowReference",
+						"datasetParameters": {
+							"sink1": {
+								"DateTime": {
+									"value": "@utcnow()",
+									"type": "Expression"
+								}
+							}
+						}
+					},
+					"staging": {
+						"linkedService": {
+							"referenceName": "AzureDataLakeStorageLocal",
+							"type": "LinkedServiceReference"
+						},
+						"folderPath": "sap-data/Staging"
+					},
+					"integrationRuntime": {
+						"referenceName": "integrationRuntime1",
+						"type": "IntegrationRuntimeReference"
+					},
+					"traceLevel": "Fine",
+					"continuationSettings": {
+						"customizedCheckpointKey": "b6f01eeb-ae74-431c-947c-64aa23fdeb83"
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-12-18T10:37:29Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
